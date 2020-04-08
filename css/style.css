@@ -127,6 +127,7 @@ a {
         border-color: #000000;
         color: black;
         box-shadow: 10px 10px;
+        margin-bottom: 40px;
 
     }
 
@@ -150,11 +151,11 @@ a {
       }
     
       .primary col {
-    width: 60%;
+    width: 50%;
     float: right;
     }
     .secondary col {
-        width: 40%;
+        width: 50%;
         float: left;
     }
 
@@ -179,40 +180,47 @@ a {
         float: left;
         margin-top: 15px;
         margin-right: 25px;
-        margin-bottom: 25px;
+        margin-bottom: 45px;
         padding: 12px;
-        border: solid 2px; color: #15a01c;
+        border: solid 2px; color: tomato;
         padding: 15px;
     }
-      
+
+    .salads-img {
+		width: 300px;
+		float: right;
+		margin-top: 5px;
+		margin-right: 25px;
+		margin-bottom: 25px;
+        padding-top: 20px;
+        padding: 15px;
+        border: solid 2px; color: #15a01c;
+        /* width:170px; */
+        /* height:170px; */
+        margin-left:15px;
+	}
+    /* .clearfix {
+        overflow: auto;
+      } */
+
     .wine-img {
         width: 300px;
         float: left;
         margin-top: 15px;
         margin-right: 25px;
         margin-bottom: 25px;
-        padding: 12px;
+        padding: 15px;
         border: solid 2px; color: #15a01c;
         padding: 15px;
     }
         
-    .salads-img {
+    .dessert-img {
 		width: 300px;
 		float: left;
 		margin-top: 5px;
 		margin-right: 25px;
 		margin-bottom: 25px;
-		padding: 12px;
-		border: solid 2px; color: #15a01c;
-	}
-
-    .feat-img {
-		width: 300px;
-		float: left;
-		margin-top: 5px;
-		margin-right: 25px;
-		margin-bottom: 25px;
-		padding: 12px;
+		padding: 15px;
 		border: solid 2px; color: #15a01c;
 	}
 	.clearfix::after {
