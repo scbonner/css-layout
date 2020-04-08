@@ -1,0 +1,153 @@
+/* ================================= 
+  Base Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Varela Round', sans-serif;
+	line-height: 1.6;
+    color: teal;
+ }
+
+p {
+	font-size: .95em;
+	margin-bottom: 1.5em;
+}
+
+h2,
+h3,
+a {
+	color: #15a01c;;
+}
+
+h2,
+h3 {
+	margin-top: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name {
+	font-size: 1.25em;
+}
+
+.name,
+.main-nav li {
+	text-align: center;
+	background: #fff;
+	margin-top: 6px;
+    margin-bottom: 6px;
+    display: inline;
+}
+
+.name a,
+.main-nav a {
+	padding: 10px 15px;
+	text-align: center;
+	display: block;
+}
+
+	.main-nav a {
+		font-size: .95em;
+		color: black;;
+		text-transform: uppercase;
+	}
+	
+	.main-nav a:hover {
+		color: #093a58;
+	}
+
+/* ---- Layout Containers ---- */
+
+.container {
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.main-header {
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+	background: blue;
+	margin-bottom: 30px;
+}
+
+.main-footer {
+	text-align: center;
+	padding: 2em 0;
+    background: grey;
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 789px) {
+
+	.wrap {
+		min-height: calc(100vh - 80px);
+	}
+
+	.container {
+		width: 80%;
+		max-width: 1150px;
+		margin: 0 auto;
+	}
+
+	.main-nav {
+		float: right;
+	}
+
+	.name,
+	.main-nav li {
+		float: left;
+	}
+
+	.main-nav li {
+		margin-left: 12px;
+	}
+
+    /* ---- Columns ---- */
+    
+    .primary col {
+    width: 60%;
+    float: right;
+    }
+    .secondary col {
+        width: 40%;
+    }
+
+	
+	
+	/* ------------- */
+
+	.feat-img {
+		width: 300px;
+		float: left;
+		margin-top: 5px;
+		margin-right: 25px;
+		margin-bottom: 25px;
+		padding: 12px;
+		border: solid 2px; color: #15a01c;
+	}
+
+	.clearfix::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+}
