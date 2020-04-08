@@ -27,7 +27,7 @@ p {
 h2,
 h3,
 a {
-	color: #15a01c;;
+	color: black;
 }
 
 h2,
@@ -46,12 +46,13 @@ a {
 /* ---- Navigation ---- */
 
 .name {
-	font-size: 1.25em;
+	font-size: 2.25em;
 }
 
-.name,
+/* .name, */
 .main-nav li {
-	text-align: center;
+    text-align: center;
+    font-size: 1.25em;;
 	background: #fff;
 	margin-top: 6px;
     margin-bottom: 6px;
@@ -65,15 +66,16 @@ a {
 	display: block;
 }
 
-	.main-nav a {
+	.main-nav a:hover {
 		font-size: .95em;
-		color: black;;
-		text-transform: uppercase;
+		background-color: blue;
+        text-transform: uppercase;
+        color: #093a58;
 	}
 	
-	.main-nav a:hover {
+	/* .main-nav a:hover {
 		color: #093a58;
-	}
+	} */
 
 /* ---- Layout Containers ---- */
 
@@ -84,8 +86,8 @@ a {
 
 .main-header {
 	padding-top: 1.5em;
-	padding-bottom: 1.5em;
-	background: tomato;
+    padding-bottom: 1.5em;
+     background-image: linear-gradient(to bottom right, red, yellow, tomato); 
 	margin-bottom: 30px;
 }
 
@@ -115,7 +117,7 @@ a {
 
     }
     #greetings {
-        background-color: blanchedalmond;
+        background-color: whitesmoke;
         text-align: center;
         color: black;
         padding: 10px;
@@ -143,7 +145,11 @@ a {
 
     /* ---- Columns ---- */
     
-    .primary col {
+    .clearfix {
+        overflow: auto;
+      }
+    
+      .primary col {
     width: 60%;
     float: right;
     }
@@ -157,19 +163,40 @@ a {
 	/* ------------- */
     .winelist {
         margin-top: 3em;
-
     }
-	.wine-img {
+
+    .birds-img {
 		width: 300px;
 		float: left;
-		margin-top: 15px;
+		margin-top: 25px;
 		margin-right: 25px;
-		margin-bottom: 25px;
-		padding: 12px;
-        border: solid 2px; color: #15a01c;
+        margin-bottom: 25px;
+        padding: 15px;
+    }
 
-    }     
-    .feat-img {
+    .olives-img {
+        width: 300px;
+        float: left;
+        margin-top: 15px;
+        margin-right: 25px;
+        margin-bottom: 25px;
+        padding: 12px;
+        border: solid 2px; color: #15a01c;
+        padding: 15px;
+    }
+      
+    .wine-img {
+        width: 300px;
+        float: left;
+        margin-top: 15px;
+        margin-right: 25px;
+        margin-bottom: 25px;
+        padding: 12px;
+        border: solid 2px; color: #15a01c;
+        padding: 15px;
+    }
+        
+    .salads-img {
 		width: 300px;
 		float: left;
 		margin-top: 5px;
@@ -179,6 +206,15 @@ a {
 		border: solid 2px; color: #15a01c;
 	}
 
+    .feat-img {
+		width: 300px;
+		float: left;
+		margin-top: 5px;
+		margin-right: 25px;
+		margin-bottom: 25px;
+		padding: 12px;
+		border: solid 2px; color: #15a01c;
+	}
 	.clearfix::after {
 		content: "";
 		display: table;
