@@ -5,11 +5,18 @@
 * {
 	box-sizing: border-box;
 }
+h1 {
+   
+    text-shadow: 3px 3px 6px #000000;
+    font-size: 25px;
+    color: grey;
 
+}
 body {
-	font-family: 'Varela Round', sans-serif;
-	line-height: 1.6;
-    color: teal;
+	font-family: 'Lucida Handwriting'', sans-serif;
+    line-height: 1.6;
+    color: black;
+    
  }
 
 p {
@@ -78,7 +85,7 @@ a {
 .main-header {
 	padding-top: 1.5em;
 	padding-bottom: 1.5em;
-	background: blue;
+	background: tomato;
 	margin-bottom: 30px;
 }
 
@@ -104,8 +111,22 @@ a {
 	.container {
 		width: 80%;
 		max-width: 1150px;
-		margin: 0 auto;
-	}
+        margin: 0 auto;
+
+    }
+    #greetings {
+        background-color: blanchedalmond;
+        text-align: center;
+        color: black;
+        padding: 10px;
+        padding-bottom: 20px;;
+        border-style: solid;
+        border-radius: 1em;
+        border-color: #000000;
+        color: black;
+        box-shadow: 10px 10px;
+
+    }
 
 	.main-nav {
 		float: right;
@@ -128,13 +149,27 @@ a {
     }
     .secondary col {
         width: 40%;
+        float: left;
     }
 
 	
 	
 	/* ------------- */
+    .winelist {
+        margin-top: 3em;
 
-	.feat-img {
+    }
+	.wine-img {
+		width: 300px;
+		float: left;
+		margin-top: 15px;
+		margin-right: 25px;
+		margin-bottom: 25px;
+		padding: 12px;
+        border: solid 2px; color: #15a01c;
+
+    }     
+    .feat-img {
 		width: 300px;
 		float: left;
 		margin-top: 5px;
